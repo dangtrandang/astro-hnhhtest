@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-light: #FCF5EE; /* Creamy Canvas */
+  --color-brand-muted: #F2D1D1; /* Soft Nurture */
+  --color-brand-accent: #C6DCE4; /* Misty Wisdom */
+  --color-brand-primary: #850E35; /* Ruby Trust */
+  --color-brand-dark: #2B1E1E; /* Màu chữ tối tương thích với Ruby Trust */
+  --font-sans: 'Nunito', sans-serif;
+  --font-serif: 'Lora', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-brand-light text-brand-dark font-sans antialiased selection:bg-brand-primary selection:text-brand-light;
+}
