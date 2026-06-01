@@ -1,115 +1,126 @@
-# HỒNG NGỌC HUYỀN HỌC - NỘI DUNG RAW CỦA CÁC SECTION
+# HỒNG NGỌC HUYỀN HỌC - NỘI DUNG RAW CỦA CÁC SECTION (CẬP NHẬT 100% THEO MOCKUP)
 
-Tài liệu này tổng hợp toàn bộ nội dung chữ (copywriting) hiển thị trên giao diện trang chủ Hồng Ngọc Huyền Học, được bóc tách hoàn toàn khỏi mã nguồn và ngôn ngữ thiết kế.
+Tài liệu này tổng hợp toàn bộ nội dung chữ (copywriting) hiển thị trên giao diện trang chủ Hồng Ngọc Huyền Học đã đồng bộ hoàn hảo theo sát 100% mockup thiết kế mẫu, được bóc tách hoàn toàn khỏi mã nguồn và ngôn ngữ thiết kế.
 
 ---
 
-## 1. HERO SECTION (BÌA TẠP CHÍ KHAI MỞ)
+## 1. HEADER (THANH ĐIỀU HƯỚNG TỐI GIẢN)
+
+*   **Các mục điều hướng chính:**
+    *   Trang chủ
+    *   Giới thiệu
+    *   Hành trình
+    *   Liên hệ
+*   **Kêu gọi hành động (CTA Button):** Đặt lịch tham vấn
+
+---
+
+## 2. HERO SECTION (BÌA TẠP CHÍ KHAI MỞ CÂN ĐỐI)
 
 *   **Lời dẫn Poetic:** ✦ Trạm dừng chân bình yên cho tâm hồn
-*   **Tiêu đề chính:** Hồng Ngọc Huyền Học
+*   **Tiêu đề thương hiệu chính:** Hồng Ngọc Huyền Học
 *   **Triết lý cốt lõi:** "Thay đổi góc nhìn để thay đổi vấn đề."
 *   **Đoạn giới thiệu ngắn:** Khi bạn sẵn sàng soi chiếu lại câu chuyện dưới một lăng kính thấu suốt và trung lập, mọi bế tắc đều tự khắc tìm thấy lối ra.
 *   **Các nút kêu gọi hành động (CTA):**
-    *   Trò chuyện cùng Hồng Ngọc
+    *   Trò chuyện cùng Ngọc
     *   Tìm hiểu về Hồng Ngọc →
 
 ---
 
-## 2. PROBLEM SECTION (NHỮNG TIẾNG THỞ DÀI LẶNG LẼ)
+## 3. PROBLEM SECTION (NHỮNG TIẾNG THỞ DÀI LẶNG LẼ)
 
 *   **Lời dẫn:** ✦ Những Tiếng Thở Dài Lặng Lẽ
 *   **Tiêu đề chính:** Có Phải Bạn Đang Xoay Vòng Trong Sự Mơ Hồ?
-*   **3 Vấn đề cốt lõi của khách hàng:**
-    *   **Tình cảm:** Lặp đi lặp lại một kiểu tổn thương cũ. Mắc kẹt trong mối quan hệ độc hại mà chưa tìm thấy lối ra thấu suốt.
-    *   **Bản thân:** Đánh mất tiếng nói bên trong. Cảm thấy chênh vênh, mất phương hướng và không hiểu mình thực sự khao khát điều gì.
-    *   **Ngã rẽ Cuộc sống:** Áp lực trước những lựa chọn lớn về công việc hay gia đình mà thiếu một lăng kính khách quan, tin cậy để soi tỏ.
+*   **3 Vấn đề cốt lõi của khách hàng (kèm nhãn phụ mềm mại):**
+    *   **Tình cảm** *(mối quan hệ độc hại)*: Lặp đi lặp lại một kiểu tổn thương cũ. Mắc kẹt trong mối quan hệ độc hại mà chưa tìm thấy lối ra thấu suốt.
+    *   **Bản thân** *(đánh mất tiếng nói)*: Đánh mất tiếng nói bên trong. Cảm thấy chênh vênh, mất phương hướng và không hiểu mình thực sự khao khát điều gì.
+    *   **Ngã rẽ Cuộc sống** *(lựa chọn lớn)*: Áp lực trước những lựa chọn lớn về công việc hay gia đình mà thiếu một lăng kính khách quan, tin cậy để soi tỏ.
 *   **Thông điệp triết lý:** "Bế tắc không phải là ngõ cụt. Đôi khi, đó chỉ là lời mời gọi của cuộc sống để bạn dừng chân và thay đổi góc nhìn."
 
 ---
 
-## 3. QUOTE SECTION (KHOẢNG LẶNG CHIÊM NGHIỆM)
+## 4. QUOTE SECTION (KHOẢNG LẶNG CHIÊM NGHIỆM ĐẤT ẤM)
 
 *   **Câu triết lý trọng tâm:** Cùng một sự việc xảy ra, có người thấy đó là ngõ cụt, có người thấy đó là bài học. Huyền học không giúp bạn trốn tránh nỗi đau, nó mang lại một góc nhìn bao quát để bạn hiểu rõ:
-*   **Câu hỏi khai thị:** Vì sao chuyện này lại đến với mình?
-*   **Dấu ấn chữ ký:** Triết lý của Hồng Ngọc Huyền Học
+*   **Câu hỏi khai thị:** "Vì sao chuyện này lại đến với mình?"
+*   **Dấu ấn chữ ký (Góc phải dưới):** Triết lý của Hồng Ngọc Huyền Học
 
 ---
 
-## 4. TOOLS SECTION (PHƯƠNG PHÁP KẾT HỢP)
+## 5. TOOLS SECTION (PHƯƠNG PHÁP KẾT HỢP - TRẬN HÌNH OVAL OVALS)
 
 *   **Lời dẫn:** ✦ Phương Pháp Kết Hợp
 *   **Tiêu đề chính:** Các Công Cụ Giúp Bạn Nhìn Thấu Bức Tranh Toàn Cảnh
-*   **Các công cụ ứng dụng:**
+*   **3 Công cụ ứng dụng cốt lõi:**
     *   **Tarot (✦ Chụp X-Quang Cảm Xúc):** Phản chiếu sâu sắc năng lượng hiện tại của bạn và đối phương, gỡ rối những nút thắt trong tình cảm và các quyết định ngắn hạn.
     *   **Thần Số Học (✦ Giải Mã Khuôn Mẫu Cuộc Đời):** Nhận diện những con số cốt lõi để thấu suốt bản thân, thấu cảm người thương và biết vì sao bạn hay vấp ngã ở một bài học cụ thể.
     *   **Chiêm Tinh Học (✦ Bản Đồ Năng Lượng Gốc):** Giải mã vị trí các thiên thể tại thời điểm bạn chào đời, mở ra lăng kính toàn diện để thấu hiểu và chấp nhận trọn vẹn chính mình.
 
 ---
 
-## 5. JOURNEY TIERS (PHÂN TẦNG NHU CẦU CHỮA LÀNH)
+## 6. JOURNEY TIERS (PHÂN TẦNG NHU CẦU - 3 CỘT CỔNG VÒM SONG SONG)
 
 *   **Lời dẫn:** ✦ Hành Trình Khai Thị
 *   **Tiêu đề chính:** Phân Tầng Theo Chiều Sâu Nhu Cầu
 *   **Đoạn giới thiệu:** Huyền học không nên là sự chắp vá mơ hồ. Hồng Ngọc sắp xếp các buổi tham vấn theo 3 tầng chiều sâu để phù hợp nhất với trạng thái hiện tại của tâm hồn bạn.
 *   **Phân tầng dịch vụ cụ thể:**
-    *   **TẦNG 01: Gỡ Rối & Kết Nối Hiện Tại (Ứng dụng chính: Tarot)**
+    *   **01 (TẦNG 01): Gỡ Rối & Kết Nối Hiện Tại (✦ Tarot)**
         *   *Mô tả:* Dành cho ai đang đứng trước các ngã rẽ cuộc sống, cần câu trả lời nhanh, rõ ràng và trung thực cho những nút thắt cấp bách hiện tại.
-        *   *Đối tượng phù hợp nhất:* Đang có những câu hỏi cụ thể, cấp bách trong ngắn hạn về tình cảm, công việc hoặc tài chính.
-        *   *Phương thức đồng hành:* Buổi trò chuyện tương tác 1-1 (Online/Offline) kéo dài 30 - 60 phút. Bài lên gì nói đó, giải mã bản chất.
-        *   *Cam kết từ Hồng Ngọc:* Khai thị thực tế, không phán xét đúng sai, tôn trọng tuyệt đối tự do ý chí và quyền quyết định của bạn.
-    *   **TẦNG 02: Thấu Hiểu Bản Thân & Định Vị Bản Mệnh (Ứng dụng chính: Thần số học & Chiêm tinh)**
+        *   *Phù hợp nhất:* Đang có những câu hỏi cụ thể, cấp bách trong ngắn hạn về tình cảm, công việc hoặc tài chính.
+        *   *Cách thức:* Buổi trò chuyện tương tác 1-1 (Online/Offline) kéo dài 30 - 60 phút. Bài lên gì nói đó, giải mã bản chất.
+        *   *Cam kết:* Khai thị thực tế, không phán xét đúng sai, tôn trọng tuyệt đối tự do ý chí và quyền quyết định.
+    *   **02 (TẦNG 02): Thấu Hiểu & Định Vị Bản Mệnh (✦ Thần số học & Chiêm tinh)**
         *   *Mô tả:* Giải mã sâu sắc bản đồ gốc thiên bẩm của bạn, chỉ ra tiềm năng, điểm mù cá nhân, bài học nghiệp quả và các chu kỳ biến động lớn.
-        *   *Đối tượng phù hợp nhất:* Muốn hiểu rõ la bàn cuộc đời mình, định vị bản thân và lập kế hoạch chiến lược dài hạn cho sự nghiệp và tâm hồn.
-        *   *Phương thức đồng hành:* Nhận tập tài liệu phân tích chi tiết viết tay + 1 buổi tham vấn chuyên sâu dài 90 phút giải thích chi tiết cùng Hồng Ngọc.
-        *   *Cam kết từ Hồng Ngọc:* Định hướng thực tế, khoa học và cá nhân hóa sâu sắc, giúp bạn tự tin nắm giữ tay lái cuộc đời.
-    *   **TẦNG 03: Khai Thị Toàn Diện & Chữa Lành (Ứng dụng chính: Trị liệu Mối quan hệ & Phong thủy dòng chảy)**
+        *   *Phù hợp nhất:* Muốn hiểu rõ la bàn cuộc đời mình, định vị bản thân và lập kế hoạch chiến lược dài hạn cho sự nghiệp và tâm hồn.
+        *   *Cách thức:* Nhận tập tài liệu phân tích chi tiết viết tay + 1 buổi tham vấn chuyên sâu dài 90 phút giải thích chi tiết cùng Hồng Ngọc.
+        *   *Cam kết:* Định hướng thực tế, khoa học và cá nhân hóa sâu sắc, giúp bạn tự tin nắm giữ tay lái cuộc đời.
+    *   **03 (TẦNG 03): Khai Thị Toàn Diện & Chữa Lành (✦ Mối quan hệ & Phong thủy)**
         *   *Mô tả:* Phương pháp kết hợp nhằm chữa lành sâu sắc các tổn thương mối quan hệ cũ hoặc điều chỉnh, tối ưu hóa dòng chảy năng lượng trong không gian sống.
-        *   *Đối tượng phù hợp nhất:* Đang gặp bế tắc lớn kéo dài trong các mối quan hệ (gia đình, cặp đôi), cảm thấy năng lượng gia đạo hoặc nơi làm việc bị nghẽn.
-        *   *Phương thức đồng hành:* Lộ trình đồng hành dài hạn 1-1 thiết kế riêng biệt dựa trên từng trường hợp cụ thể để chuyển hóa bền vững.
-        *   *Cam kết từ Hồng Ngọc:* Lắng nghe chân thành, đồng hành ấm áp như một người chị gái tâm giao, gỡ rối triệt để từ gốc rễ năng lượng.
-*   **Kêu gọi hành động:** Nhận tư vấn ngay
+        *   *Phù hợp nhất:* Đang gặp bế tắc lớn kéo dài trong các mối quan hệ (gia đình, cặp đôi), cảm thấy năng lượng gia đạo hoặc nơi làm việc bị nghẽn.
+        *   *Cách thức:* Lộ trình đồng hành dài hạn 1-1 thiết kế riêng biệt dựa trên từng trường hợp cụ thể để chuyển hóa bền vững.
+        *   *Cam kết:* Lắng nghe chân thành, đồng hành ấm áp như một người chị gái tâm giao, gỡ rối triệt để từ gốc rễ năng lượng.
+*   **Kêu gọi hành động chung:** Nhận tư vấn ngay
 
 ---
 
-## 6. ABOUT SECTION (NGƯỜI BẠN ĐỒNG HÀNH)
+## 7. ABOUT SECTION (CÁNH CỬA KHAI THỊ BƯỚC QUA)
 
 *   **Lời dẫn:** ✦ Người Bạn Đồng Hành
 *   **Tiêu đề chính:** Chào bạn, tôi là Hồng Ngọc
-*   **Tuyên ngôn cá nhân:** Huyền học không phải để dự đoán tương lai một cách thụ động, mà là để bạn biết mình có những tài nguyên nào để làm chủ nó.
+*   **Tuyên ngôn cá nhân:** "Huyền học không phải để dự đoán tương lai một cách thụ động, mà là để bạn biết mình có những tài nguyên nào để làm chủ nó."
 *   **Đoạn tự sự:**
     *   Với Ngọc, mỗi con số trong Thần số học hay mỗi chòm sao trên Bản đồ sao không phải là những nhãn dán định mệnh. Chúng là tấm bản đồ năng lượng gốc, chỉ ra những bài học bạn cần tốt nghiệp và những tiềm năng chưa được đánh thức.
     *   Tôi không đóng vai một người thầy phán xét hay một người phán xử tương lai. Tôi ở đây như một người đồng hành ấm áp, mang đến cho bạn một không gian an toàn tuyệt đối để lắng lòng và chia sẻ.
     *   Trải bài Tarot, giải mã các con số hay bản đồ sao chỉ là công cụ chỉ đường. Người nắm giữ la bàn quyết định chọn lối rẽ nào, luôn luôn là chính bạn.
 *   **Chữ ký nghệ thuật:** Hồng Ngọc - ✦ Người Dẫn Đường Tận Tâm
-*   **Thống kê thực tế:**
-    *   **5+** Năm Kinh Nghiệm
-    *   **1000+** Khách Hàng Đồng Hành
+*   **Thống kê thực chứng tối giản:**
+    *   **5+** Năm Thực Chứng
+    *   **1000+** Khách Hàng
     *   **3** Chuyên Môn Cốt Lõi
 
 ---
 
-## 7. BRAND VALUES (ĐỊNH VỊ CỐT LÕI & CAM KẾT VÀNG)
+## 8. BRAND VALUES (ĐỊNH VỊ MINH BẠCH & BẢNG CAM KẾT VÀNG)
 
 *   **Lời dẫn:** ✦ Cam Kết Vàng Dành Cho Bạn
 *   **Tiêu đề chính:** Giá Trị Khai Thị & Định Vị Cốt Lõi
-*   **5 Giá trị vàng:**
+*   **5 Giá trị cốt lõi:**
     *   **Trung thực:** Bài lên thế nào nói thế đó, không tô hồng hay vẽ vời thêm bớt.
     *   **Trung lập:** Cung cấp góc nhìn khách quan, không phán xét và tôn trọng quyết định của bạn.
     *   **Toàn diện:** Kết hợp linh hoạt nhiều phương pháp để gỡ nút thắt triệt để nhất.
-    *   **Dễ gần:** Master-level 9 năm kinh nghiệm nhưng chi phí hợp lý, ấm áp như chị gái tâm giao.
-    *   **Chiều sâu:** Mọi đúc kết đều dựa trên sự thấu cảm sâu sắc và trải nghiệm tham vấn thực tế.
-*   **Bảng cam kết minh bạch:**
-    *   **Hồng Ngọc chắc chắn KHÔNG:**
-        *   Không phán xét đúng sai hay áp đặt góc nhìn cá nhân lên lựa chọn của bạn.
-        *   Tuyệt đối không hù dọa gieo rắc nỗi sợ để chào mời cúng bái giải hạn hay bán vật phẩm phong thủy.
-    *   **Hồng Ngọc Cam Kết LÀ:**
-        *   Chị gái tâm giao ấm áp, biết lắng nghe chân thành và tạo không gian chia sẻ tuyệt đối bảo mật, an toàn.
-        *   Người khai thị trung lập đưa giải pháp rõ ràng, nhưng tôn trọng và trao lại toàn bộ quyền tự quyết cho bạn.
+    *   **Dễ gần:** Ấm áp như chị gái tâm giao, gạt bỏ khoảng cách lý thuyết.
+    *   **Chiều sâu:** Mọi đúc kết đều dựa trên sự thấu cảm và trải nghiệm thực tế.
+*   **Bảng cam kết minh bạch (Transparency Commitment):**
+    *   **Cột Hồng Ngọc KHÔNG Bao Giờ:**
+        *   *Không phán xét đúng sai:* Không phán xét đúng sai hay áp đặt góc nhìn cá nhân lên lựa chọn của bạn.
+        *   *Tuyệt đối không hù dọa:* Tuyệt đối không hù dọa gieo rắc nỗi sợ để chào mời cúng bái giải hạn hay bán vật phẩm phong thủy.
+    *   **Cột Hồng Ngọc Cam Kết LÀ:**
+        *   *Chị gái tâm giao ấm áp:* Biết lắng nghe chân thành và tạo không gian chia sẻ tuyệt đối bảo mật, an toàn.
+        *   *Người khai thị trung lập:* Đưa giải pháp rõ ràng, nhưng tôn trọng và trao lại toàn bộ quyền tự quyết cho bạn.
 
 ---
 
-## 8. SOCIAL PROOF (NHỮNG CÂU CHUYỆN CHUYỂN HÓA)
+## 9. SOCIAL PROOF (NHỮNG CÂU CHUYỆN CHUYỂN HÓA)
 
 *   **Lời dẫn:** ✦ Những Câu Chuyện Chuyển Hóa
 *   **Tiêu đề chính:** Khi Góc Nhìn Thay Đổi, Câu Chuyện Cũng Khác Đi
@@ -121,7 +132,7 @@ Tài liệu này tổng hợp toàn bộ nội dung chữ (copywriting) hiển t
 
 ---
 
-## 9. FAQ SECTION (GIẢI ĐÁP NGHI NGẠI)
+## 10. FAQ SECTION (GIẢI ĐÁP NGHI NGẠI)
 
 *   **Lời dẫn:** ✦ Gỡ Bỏ Hoài Nghi
 *   **Tiêu đề chính:** Giải Đáp Thắc Mắc Nghi Ngại
@@ -137,18 +148,21 @@ Tài liệu này tổng hợp toàn bộ nội dung chữ (copywriting) hiển t
 
 ---
 
-## 10. PRE-FOOTER (KÊU GỌI HÀNH ĐỘNG CUỐI)
+## 11. PRE-FOOTER (KHỞI ĐẦU HÀNH TRÌNH ĐẤT ẤM)
 
-*   **Tiêu đề lớn:** Bạn đã sẵn sàng để tự cầm lái cuộc đời mình?
+*   **Lời dẫn:** ✦ Khởi Đầu Hành Trình
+*   **Tiêu đề chính:** Bạn đã sẵn sàng để tự cầm lái cuộc đời?
 *   **Thông điệp:** Một cuộc trò chuyện 60 phút có thể không xóa sạch mọi vấn đề, nhưng nó chắc chắn sẽ mang lại cho bạn một tâm trí đủ sáng tỏ để biết bước tiếp theo mình cần làm gì.
-*   **Kêu gọi hành động:**
-    *   Đặt lịch trò chuyện cùng Ngọc
-    *   Tìm hiểu thêm qua các bài viết
+*   **Form Đăng Ký Ngang (CTA):**
+    *   Họ tên của bạn... *(Name Input)*
+    *   Email liên hệ... *(Email Input)*
+    *   **Nút đăng ký:** Đăng ký tham vấn
 
 ---
 
-## 11. FOOTER (THÔNG TIN LIÊN HỆ & BẢN QUYỀN)
+## 12. FOOTER (BẢN QUYỀN & SUN EMBLEM)
 
+*   **Tiêu đề chính:** Hồng Ngọc
 *   **Lời giới thiệu:** Nơi bạn được lắng nghe, thấu hiểu và tìm lại sự bình yên trong tâm trí thông qua Tarot, Thần số học và Chiêm tinh.
 *   **Dịch vụ:** Đọc bài Tarot, Giải mã Thần Số Học, Lập Bản Đồ Sao, Tư vấn tâm lý
 *   **Liên kết:** Về chúng tôi, Góc chia sẻ (Blog), Câu hỏi thường gặp, Chính sách bảo mật
