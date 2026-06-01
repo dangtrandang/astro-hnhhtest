@@ -99,8 +99,12 @@ export default function SocialProof() {
       {/* Full Wide Accordion Container with elegant edge padding */}
       <div className="w-full px-4 md:px-10 lg:px-16 relative z-30">
         <div
-          className="flex flex-col lg:flex-row gap-2 w-full h-[850px] lg:h-[550px] transition-all duration-500 ease-out"
-          onMouseLeave={() => setHoveredIndex(1)} // Resets back to column 1 being open by default
+          className="flex flex-col lg:flex-row gap-2 w-full h-[850px] lg:h-[550px]"
+          onMouseLeave={() => {
+            if (typeof window !== 'undefined' && window.innerWidth >= 1024) {
+              setHoveredIndex(1);
+            }
+          }} // Resets back to column 1 being open by default on desktop only
         >
           {stories.map((story, index) => {
             const isHovered = hoveredIndex === index;
@@ -111,7 +115,7 @@ export default function SocialProof() {
                 key={story.id}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onClick={() => handleCardClick(index, story.image)}
-                className={`relative overflow-hidden rounded-xl cursor-pointer transition-all duration-700 ease-[0.22,1,0.36,1] group border min-w-0 ${isHovered
+                className={`relative overflow-hidden rounded-xl cursor-pointer transition-[flex,border-color,box-shadow] will-change-[flex] duration-700 ease-[0.22,1,0.36,1] group border min-w-0 ${isHovered
                     ? "border-brand-primary/30 shadow-[0_20px_50px_rgba(133,14,53,0.15)]"
                     : "border-white/50 shadow-[0_8px_30px_rgb(0,0,0,0.02)]"
                   } ${flexClass}`}
@@ -121,12 +125,17 @@ export default function SocialProof() {
                   <img
                     src={story.image}
                     alt={story.title}
-                    className={`w-full h-full object-cover transition-[transform,filter] duration-700 ease-[0.22,1,0.36,1] ${isHovered ? "scale-105 saturate-[1.1] brightness-[1.05]" : "scale-100 saturate-100 brightness-[0.8]"
+                    className={`w-full h-full object-cover transition-transform duration-700 ease-[0.22,1,0.36,1] ${isHovered ? "scale-105" : "scale-100"
                       }`}
                   />
                   {/* Glowing warm overlay on hover */}
                   <div
                     className={`absolute inset-0 bg-brand-primary/10 mix-blend-color-burn transition-opacity duration-700 ${isHovered ? "opacity-30" : "opacity-0"
+                      }`}
+                  />
+                  {/* Dark overlay for inactive cards to dim the image (replaces slow CSS brightness/saturate filters) */}
+                  <div
+                    className={`absolute inset-0 bg-black/25 transition-opacity duration-700 ease-[0.22,1,0.36,1] z-10 pointer-events-none ${isHovered ? "opacity-0" : "opacity-100"
                       }`}
                   />
                   {/* Rich Dark Gradient to guarantee text legibility */}
@@ -187,15 +196,18 @@ export default function SocialProof() {
                       initial={false}
                       animate={{
                         opacity: isHovered ? 1 : 0,
-                        height: isHovered ? "auto" : 0,
-                        marginTop: isHovered ? 16 : 0
+                        y: isHovered ? 0 : 15,
                       }}
                       transition={{ 
                         duration: 0.5, 
                         ease: [0.22, 1, 0.36, 1],
-                        delay: isHovered ? 0.25 : 0
+                        delay: isHovered ? 0.2 : 0
                       }}
-                      className="overflow-hidden"
+                      className={`overflow-hidden transition-[max-height,margin-top] ease-[0.22,1,0.36,1] ${
+                        isHovered 
+                          ? "max-h-[300px] mt-6 duration-700" 
+                          : "max-h-0 mt-0 duration-300 pointer-events-none"
+                      }`}
                     >
                       <svg className="w-8 h-8 text-brand-muted/20 mb-3" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
