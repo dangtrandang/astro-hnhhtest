@@ -77,22 +77,21 @@ export default function SocialProof() {
       <div className="absolute top-20 left-10 w-72 h-72 bg-brand-primary/5 rounded-full filter blur-3xl pointer-events-none z-0"></div>
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-brand-muted/10 rounded-full filter blur-3xl pointer-events-none z-0"></div>
 
-      {/* Header Container (Kept in standard width for elegant reading alignment) */}
-      <div className="max-w-6xl mx-auto px-6 relative z-30">
+      {/* Header Container (Left aligned for editorial aesthetic) */}
+      <div className="max-w-5xl mx-auto px-6 relative z-30">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-          className="text-center mb-20"
+          className="text-left mb-20 max-w-2xl"
         >
-          <span className="text-brand-primary font-semibold tracking-[0.2em] uppercase text-xs mb-3 block">
-            Những Câu Chuyện Chuyển Hóa
+          <span className="text-brand-primary font-bold tracking-[0.25em] uppercase text-[10px] md:text-xs mb-4 block">
+            ✦ Những Câu Chuyện Chuyển Hóa
           </span>
-          <h2 className="font-serif text-3xl md:text-5xl text-brand-dark mb-6 leading-tight max-w-3xl mx-auto">
-            Khi góc nhìn thay đổi, câu chuyện cũng khác đi
+          <h2 className="font-serif text-3xl md:text-5xl text-brand-dark mb-6 leading-tight font-light">
+            Khi Góc Nhìn Thay Đổi, <span className="italic font-bold text-brand-primary">Câu Chuyện Cũng Khác Đi</span>
           </h2>
-          <div className="w-12 h-[2px] bg-brand-primary/40 mx-auto"></div>
         </motion.div>
       </div>
 
@@ -216,9 +215,9 @@ export default function SocialProof() {
                         "{story.content}"
                       </p>
                       <div className="flex items-center gap-3">
-                        <div className="h-px w-6 bg-brand-primary/60" />
-                        <span className="text-[11px] uppercase tracking-wider text-brand-muted font-medium">
-                          {story.author}
+                        <div className="h-px w-6 bg-brand-primary/40" />
+                        <span className="text-[10px] uppercase tracking-[0.25em] font-bold text-brand-muted">
+                          ✦ {story.author}
                         </span>
                       </div>
                     </motion.div>
@@ -274,12 +273,6 @@ export default function SocialProof() {
         )}
       </AnimatePresence>
 
-      {/* Wave Shape Divider pointing to next section */}
-      <div className="absolute bottom-0 left-0 right-0 z-20 pointer-events-none transform translate-y-px text-[#F2D1D1]/40">
-        <svg className="w-full h-8 md:h-16" viewBox="0 0 1440 120" preserveAspectRatio="none">
-          <path fill="currentColor" d="M0,90 C480,120 960,30 1440,90 L1440,120 L0,120 Z"></path>
-        </svg>
-      </div>
     </section>
   );
 }

@@ -1,17 +1,6 @@
-import { motion, useScroll, useTransform } from 'framer-motion';
-import { useRef } from 'react';
+import { motion } from 'framer-motion';
 
 export default function About() {
-  const containerRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start end", "end start"]
-  });
-
-  const rotate1 = useTransform(scrollYProgress, [0, 1], [0, 360]);
-  const rotate2 = useTransform(scrollYProgress, [0, 1], [0, -360]);
-  const yParallax = useTransform(scrollYProgress, [0, 1], [50, -50]);
-
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -26,101 +15,47 @@ export default function About() {
   };
 
   return (
-    <section ref={containerRef} id="about" className="py-24 md:py-32 bg-[#F6DFDF] relative overflow-hidden">
-      {/* 2. Họa Tiết Chìm Lơ Lửng (Sacred Background Watermark) */}
-      <motion.div style={{ rotate: rotate1 }} className="absolute -right-64 top-0 w-[800px] h-[800px] opacity-[0.03] pointer-events-none">
-        <svg viewBox="0 0 100 100" fill="none" stroke="#850E35" strokeWidth="0.5">
+    <section id="about" className="py-36 bg-[#F6DFDF] relative overflow-hidden">
+      
+      {/* Background chòm sao chìm rất nhẹ */}
+      <div className="absolute -right-64 top-0 w-[800px] h-[800px] opacity-[0.02] pointer-events-none text-brand-primary">
+        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="0.5">
           <circle cx="50" cy="50" r="48" strokeDasharray="2 4" />
           <circle cx="50" cy="50" r="40" />
           <polygon points="50,10 85,75 15,75" />
-          <polygon points="50,90 15,25 85,25" />
-          <circle cx="50" cy="50" r="20" strokeDasharray="1 2" />
-          {/* Zodiac markers pseudo */}
-          {Array.from({ length: 12 }).map((_, i) => (
-            <line key={i} x1="50" y1="2" x2="50" y2="10" transform={`rotate(${i * 30} 50 50)`} />
-          ))}
         </svg>
-      </motion.div>
+      </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-5xl mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-center">
 
-          {/* Cột 1: Khung Ảnh Huyền Bí */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-            className="lg:col-span-5 relative"
-          >
-            {/* Astrolabe Frame */}
-            <div className="absolute inset-0 -m-12 sm:-m-16 pointer-events-none">
-              <motion.svg style={{ rotate: rotate1 }} viewBox="0 0 200 200" className="w-full h-full text-brand-primary opacity-20">
-                <circle cx="100" cy="100" r="95" fill="none" stroke="currentColor" strokeWidth="0.5" strokeDasharray="4 4" />
-                <circle cx="100" cy="100" r="85" fill="none" stroke="currentColor" strokeWidth="1" />
-                {/* Orbital nodes */}
-                <circle cx="100" cy="15" r="3" fill="currentColor" />
-                <circle cx="100" cy="185" r="3" fill="currentColor" />
-                <circle cx="15" cy="100" r="3" fill="currentColor" />
-                <circle cx="185" cy="100" r="3" fill="currentColor" />
-              </motion.svg>
-              <motion.svg style={{ rotate: rotate2 }} viewBox="0 0 200 200" className="absolute inset-0 w-full h-full text-brand-primary opacity-30">
-                <ellipse cx="100" cy="100" rx="90" ry="30" fill="none" stroke="currentColor" strokeWidth="1" transform="rotate(45 100 100)" />
-                <ellipse cx="100" cy="100" rx="90" ry="30" fill="none" stroke="currentColor" strokeWidth="1" transform="rotate(-45 100 100)" />
-                {/* Floating stars */}
-                <path d="M 50 40 L 52 45 L 57 47 L 52 49 L 50 54 L 48 49 L 43 47 L 48 45 Z" fill="#D4AF37" />
-                <path d="M 150 160 L 152 165 L 157 167 L 152 169 L 150 174 L 148 169 L 143 167 L 148 165 Z" fill="#D4AF37" />
-              </motion.svg>
-            </div>
-
-            <img 
-              src="https://cms.hongngochuyenhoc.com/assets/316e3051-0142-4976-ae62-9b15d65ff64a" 
-              alt="Chân dung Hồng Ngọc" 
-              className="w-[85%] h-auto rounded-[3rem] relative z-10 mx-auto block"
-              loading="lazy"
-            />
-            
-            {/* 3. Dấu ấn cá nhân nổi trên ảnh (Wax Seal - Bumpy path removed and replaced with a perfect circle base) */}
-            <motion.div 
-              style={{ y: yParallax }}
-              className="absolute -bottom-8 -right-8 z-20 w-32 h-32"
-            >
-              <svg viewBox="0 0 100 100" className="w-full h-full drop-shadow-2xl filter hover:scale-105 transition-transform duration-500">
-                <defs>
-                  <radialGradient id="waxGrad" cx="50%" cy="50%" r="50%">
-                    <stop offset="0%" stopColor="#A81242" />
-                    <stop offset="80%" stopColor="#850E35" />
-                    <stop offset="100%" stopColor="#4A081D" />
-                  </radialGradient>
-                </defs>
-                {/* Perfect circle base replacing the bumpy path */}
-                <circle cx="50" cy="50" r="45" fill="url(#waxGrad)" />
-                <circle cx="50" cy="50" r="35" fill="none" stroke="#600A25" strokeWidth="2" opacity="0.5" />
-                {/* Icon bên trong sáp */}
-                <path d="M40 35 L60 35 L50 65 Z" fill="#D4AF37" opacity="0.8" />
-                <circle cx="50" cy="50" r="10" fill="url(#waxGrad)" />
-                <circle cx="50" cy="50" r="5" fill="#D4AF37" />
-                <path d="M 40 40 L 60 60 M 60 40 L 40 60" stroke="#D4AF37" strokeWidth="1" />
-              </svg>
-            </motion.div>
-          </motion.div>
-
-          {/* Cột 2: Nội dung & Stats */}
-          <div className="lg:col-span-7 mt-12 lg:mt-0">
+          {/* Left Column (7 cols): Editorial Text & Stats */}
+          <div className="lg:col-span-7 flex flex-col text-left">
             <motion.div
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, margin: "-100px" }}
               variants={container}
+              className="flex flex-col"
             >
-              <motion.h2 variants={item} className="text-3xl md:text-5xl font-serif text-brand-dark mb-8 relative">
-                Hồng Ngọc – Vị khách mời trong câu chuyện của bạn
+              {/* Editorial Title */}
+              <span className="text-brand-primary font-bold tracking-[0.25em] uppercase text-[10px] md:text-xs mb-4 block">
+                ✦ Người Bạn Đồng Hành
+              </span>
+              <motion.h2 variants={item} className="text-3xl md:text-5xl font-serif text-brand-dark mb-6 leading-[1.25] font-light">
+                Chào bạn, tôi là <span className="italic font-bold text-brand-primary">Hồng Ngọc</span>
               </motion.h2>
 
-              <motion.div variants={item} className="space-y-6 text-brand-dark/80 text-lg leading-relaxed relative">
-                {/* Oversized Quote Mark */}
-                <span className="absolute -top-10 -left-6 text-8xl font-serif text-brand-primary opacity-10 pointer-events-none leading-none">"</span>
+              {/* Slogan Statement */}
+              <motion.p variants={item} className="text-brand-primary text-xs font-bold uppercase tracking-widest leading-relaxed mb-6 border-b border-brand-primary/10 pb-6">
+                "Huyền học không phải để dự đoán tương lai một cách thụ động, mà là để bạn biết mình có những tài nguyên nào để làm chủ nó."
+              </motion.p>
 
+              {/* Body narrative */}
+              <motion.div variants={item} className="space-y-6 text-brand-dark/80 text-sm md:text-base leading-relaxed font-light">
+                <p>
+                  Với Ngọc, mỗi con số trong Thần số học hay mỗi chòm sao trên Bản đồ sao không phải là những nhãn dán định mệnh. Chúng là tấm bản đồ năng lượng gốc, chỉ ra những bài học bạn cần tốt nghiệp và những tiềm năng chưa được đánh thức.
+                </p>
                 <p>
                   Tôi không đóng vai một người thầy phán xét hay một người phán xử tương lai. Tôi ở đây như một người đồng hành ấm áp, mang đến cho bạn một không gian an toàn tuyệt đối để lắng lòng và chia sẻ.
                 </p>
@@ -128,66 +63,77 @@ export default function About() {
                   Trải bài Tarot, giải mã các con số hay bản đồ sao chỉ là công cụ chỉ đường. Người nắm giữ la bàn quyết định chọn lối rẽ nào, <strong className="text-brand-primary font-semibold">luôn luôn là chính bạn</strong>.
                 </p>
 
-                {/* Chữ Ký */}
+                {/* Chữ Ký Nghệ Thuật */}
                 <div className="pt-6 pb-2">
                   <span
                     style={{ fontFamily: "'Caveat', 'Brush Script MT', cursive" }}
-                    className="text-5xl md:text-6xl text-brand-primary opacity-90 inline-block -rotate-2 drop-shadow-sm"
+                    className="text-5xl md:text-6xl text-brand-primary opacity-95 inline-block -rotate-2 drop-shadow-sm"
                   >
                     Hồng Ngọc
                   </span>
-                  <p className="text-sm font-medium tracking-widest uppercase text-brand-dark/50 mt-2 ml-4">Người Dẫn Đường Tận Tâm</p>
+                  <p className="text-[10px] font-bold tracking-widest uppercase text-brand-dark/45 mt-2 ml-4">✦ Người Dẫn Đường Tận Tâm</p>
                 </div>
               </motion.div>
 
-              {/* Stats Grid: 3 columns below text */}
-              <div className="mt-12 relative z-10">
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                  {/* Card 1: Năm Kinh Nghiệm */}
-                  <motion.div variants={item} className="bg-white/40 backdrop-blur-md p-6 rounded-3xl border border-white/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:-translate-y-2 hover:shadow-[0_15px_30px_rgba(0,0,0,0.08)] hover:bg-white/60 transition-all duration-300 flex flex-col justify-center items-center text-center group">
-                    <div className="w-12 h-12 rounded-full bg-brand-light flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-sm">
-                      <svg className="w-5 h-5 text-brand-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                    </div>
-                    <span className="text-3xl font-serif text-brand-dark mb-1 font-semibold">5+</span>
-                    <span className="text-xs text-brand-dark/70 uppercase tracking-wider font-medium">Năm Kinh Nghiệm</span>
+              {/* Stats Grid: Clean floating borderless stats exactly like mockup */}
+              <div className="mt-12 pt-8 border-t border-brand-primary/10">
+                <div className="grid grid-cols-3 gap-4">
+                  {/* Stat 1 */}
+                  <motion.div variants={item} className="flex flex-col text-left">
+                    <span className="text-3xl md:text-4xl font-serif text-brand-primary font-bold mb-1">5+</span>
+                    <span className="text-[9px] text-brand-dark/65 uppercase tracking-widest font-bold">Năm Thực Chứng</span>
+                  </motion.div>
+                  
+                  {/* Stat 2 */}
+                  <motion.div variants={item} className="flex flex-col text-left border-l border-brand-primary/10 pl-6">
+                    <span className="text-3xl md:text-4xl font-serif text-brand-primary font-bold mb-1">1000+</span>
+                    <span className="text-[9px] text-brand-dark/65 uppercase tracking-widest font-bold">Khách Hàng</span>
                   </motion.div>
 
-                  {/* Card 2: Khách Hàng */}
-                  <motion.div variants={item} className="bg-white/40 backdrop-blur-md p-6 rounded-3xl border border-white/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:-translate-y-2 hover:shadow-[0_15px_30px_rgba(0,0,0,0.08)] hover:bg-white/60 transition-all duration-300 flex flex-col justify-center items-center text-center group">
-                    <div className="w-12 h-12 rounded-full bg-brand-light flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-sm">
-                      <svg className="w-5 h-5 text-brand-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                      </svg>
-                    </div>
-                    <span className="text-3xl font-serif text-brand-dark mb-1 font-semibold">1000+</span>
-                    <span className="text-xs text-brand-dark/70 uppercase tracking-wider font-medium">Khách Hàng Đồng Hành</span>
-                  </motion.div>
-
-                  {/* Card 3: Chuyên Môn */}
-                  <motion.div variants={item} className="bg-white/40 backdrop-blur-md p-6 rounded-3xl border border-white/60 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:-translate-y-2 hover:shadow-[0_15px_30px_rgba(0,0,0,0.08)] hover:bg-white/60 transition-all duration-300 flex flex-col justify-center items-center text-center group">
-                    <div className="w-12 h-12 rounded-full bg-brand-light flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-sm">
-                      <svg className="w-5 h-5 text-brand-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-                      </svg>
-                    </div>
-                    <span className="text-3xl font-serif text-brand-dark mb-1 font-semibold">3</span>
-                    <span className="text-xs text-brand-dark/70 uppercase tracking-wider font-medium">Chuyên Môn Cốt Lõi</span>
+                  {/* Stat 3 */}
+                  <motion.div variants={item} className="flex flex-col text-left border-l border-brand-primary/10 pl-6">
+                    <span className="text-3xl md:text-4xl font-serif text-brand-primary font-bold mb-1">3</span>
+                    <span className="text-[9px] text-brand-dark/65 uppercase tracking-widest font-bold">Chuyên Môn Cốt Lõi</span>
                   </motion.div>
                 </div>
               </div>
+
             </motion.div>
           </div>
 
-        </div>
-      </div>
+          {/* Right Column (5 cols): Open Arched Door Frame Portrait */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+            className="lg:col-span-5 flex items-center justify-center relative py-8"
+          >
+            {/* Background orbit gold line */}
+            <div className="absolute w-[110%] h-[90%] border border-[#C5A880]/20 rounded-full pointer-events-none z-0 rotate-[12deg]"></div>
 
-      {/* Shape Divider */}
-      <div className="absolute bottom-0 left-0 right-0 z-20 pointer-events-none transform translate-y-px text-brand-light">
-        <svg className="w-full h-8 md:h-16" viewBox="0 0 1440 120" preserveAspectRatio="none">
-          <path fill="currentColor" d="M0,90 C480,120 960,30 1440,90 L1440,120 L0,120 Z"></path>
-        </svg>
+            {/* Arched Door Frame */}
+            <div className="w-[250px] h-[480px] rounded-t-full border-t-2 border-x-2 border-[#C5A880]/40 p-3 bg-white/20 shadow-[0_20px_50px_rgba(43,30,30,0.03)] z-10 relative overflow-hidden">
+              <div className="w-full h-full rounded-t-full overflow-hidden relative bg-brand-light">
+                <img 
+                  src="https://cms.hongngochuyenhoc.com/assets/316e3051-0142-4976-ae62-9b15d65ff64a" 
+                  alt="Hồng Ngọc Bước Qua Cánh Cửa Khai Thị" 
+                  className="w-full h-full object-cover transition-transform duration-700 hover:scale-102"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-tr from-brand-primary/5 via-transparent to-white/10 mix-blend-overlay pointer-events-none" />
+              </div>
+            </div>
+
+            {/* Sparkle star */}
+            <div className="absolute -top-4 right-4 z-20 text-[#C5A880] animate-pulse pointer-events-none">
+              <svg viewBox="0 0 100 100" className="w-8 h-8">
+                <polygon points="50,15 58,42 85,50 58,58 50,85 42,58 15,50 42,42" fill="currentColor" />
+              </svg>
+            </div>
+          </motion.div>
+
+        </div>
       </div>
     </section>
   );
