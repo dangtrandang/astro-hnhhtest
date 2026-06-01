@@ -122,10 +122,10 @@ export default function About() {
                 <span className="absolute -top-10 -left-6 text-8xl font-serif text-brand-primary opacity-10 pointer-events-none leading-none">"</span>
 
                 <p>
-                  Trong mỗi phiên trò chuyện, tôi không đóng vai một người thầy hay một người phán xử. Tôi ở đây như một người đồng hành, tạo ra một vùng an toàn tuyệt đối – nơi bạn được lắng nghe mà không sợ bị phán xét.
+                  Tôi không đóng vai một người thầy phán xét hay một người phán xử tương lai. Tôi ở đây như một người đồng hành ấm áp, mang đến cho bạn một không gian an toàn tuyệt đối để lắng lòng và chia sẻ.
                 </p>
                 <p>
-                  Nhiệm vụ của tôi là trải bài, phân tích các dữ kiện từ các con số và chỉ ra những ngã rẽ. Nhưng người nắm quyền quyết định cuối cùng, chọn đi con đường nào, <strong className="text-brand-primary font-semibold">luôn luôn là bạn</strong>.
+                  Trải bài Tarot, giải mã các con số hay bản đồ sao chỉ là công cụ chỉ đường. Người nắm giữ la bàn quyết định chọn lối rẽ nào, <strong className="text-brand-primary font-semibold">luôn luôn là chính bạn</strong>.
                 </p>
 
                 {/* Chữ Ký */}

@@ -9,24 +9,27 @@ import HeroText from './HeroText';
     loop 
     muted 
     playsinline 
-    class="absolute inset-0 w-full h-full object-cover"
+    class="absolute inset-0 w-full h-full object-cover z-0"
   >
     <source src="https://motiou.com/media/hero-video.mp4" type="video/mp4" />
   </video>
   
 
   
-  <!-- Shape Divider: 2 layers of waves -->
-  <div class="absolute bottom-0 left-0 right-0 z-20 pointer-events-none transform translate-y-px">
+  <!-- Shape Divider: 2 layers of waves (z-30 to stay on top of video and overlays) -->
+  <div class="absolute bottom-0 left-0 right-0 z-30 pointer-events-none transform translate-y-px">
     <!-- Lớp sóng nhạt -->
-    <svg class="absolute bottom-0 left-0 w-full h-12 md:h-24 text-brand-light/60" viewBox="0 0 1440 120" preserveAspectRatio="none">
+    <svg class="absolute bottom-0 left-0 w-full h-12 md:h-24 text-[#F6DFDF]/60" viewBox="0 0 1440 120" preserveAspectRatio="none">
       <path fill="currentColor" d="M0,60 C480,130 960,10 1440,60 L1440,120 L0,120 Z"></path>
     </svg>
     <!-- Lớp sóng đậm (solid) -->
-    <svg class="absolute bottom-0 left-0 w-full h-8 md:h-16 text-brand-light" viewBox="0 0 1440 120" preserveAspectRatio="none">
+    <svg class="absolute bottom-0 left-0 w-full h-8 md:h-16 text-[#F6DFDF]" viewBox="0 0 1440 120" preserveAspectRatio="none">
       <path fill="currentColor" d="M0,90 C480,120 960,30 1440,90 L1440,120 L0,120 Z"></path>
     </svg>
   </div>
   
-  <HeroText client:load />
+  <!-- Standard HTML wrapper with relative z-20 to bypass Astro island stacking context bugs -->
+  <div class="relative z-20 w-full flex items-center justify-center">
+    <HeroText client:load />
+  </div>
 </section>
